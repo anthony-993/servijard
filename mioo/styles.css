@@ -1,0 +1,153 @@
+/* ✅ Mantener el logo y el menú alineados en la misma línea */
+header .container {
+    display: flex;
+    justify-content: space-between; /* Mantiene el logo y el menú alineados */
+    align-items: center; /* Centrar verticalmente */
+    flex-wrap: nowrap; /* Evita que los elementos salten de línea */
+    padding: 10px 20px;
+}
+
+/* ✅ Estilos del h1 con el logo */
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Tamaño del título */
+    margin: 0;
+}
+
+h1 img {
+    width: 40px; /* Tamaño del logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* ✅ Menú principal */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* ✅ Ajustar el tamaño del texto del menú */
+.menu a {
+    color: rgb(255, 19, 19);
+    text-decoration: none;
+    font-size: 16px; /* 🔹 Más pequeño que el h1 */
+}
+
+/* ✅ Ajustar el carrusel */
+.swiper-container {
+    position: relative;
+    z-index: 1; /* Debajo del menú */
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-height: 180px; /* 🔹 Reducimos la altura máxima */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ✅ Corregir visibilidad de la hamburguesa */
+.menu-toggle {
+    display: none; /* Ocultar en escritorio */
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: rgb(13, 207, 233);
+    cursor: pointer;
+    z-index: 1100; /* Asegura que esté por encima del carrusel */
+}
+
+/* ✅ Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row; /* Mantener el logo y la hamburguesa en una línea */
+        justify-content: space-between;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1001;
+    }
+
+    .menu.menu-active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar en móviles */
+    }
+}
+
+/* ✅ Evitar que la hamburguesa aparezca en escritorio */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu {
+        display: flex; /* Mantener el menú visible en escritorio */
+        position: static;
+        background: none;
+        flex-direction: row;
+    }
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ✅ Estilos del pie de página */
+footer {
+    background-color: #1295e0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+

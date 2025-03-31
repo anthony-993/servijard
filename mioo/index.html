@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Servicios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>
+                <img src="media/logo2.jpeg" alt="Logo de la empresa"> Inversiones ServiJard
+            </h1>
+            <button class="menu-toggle">☰</button>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="media/jardin1.jpg" alt="Imagen 1"></div>
+            <div class="swiper-slide"><img src="media/logo2.jpeg" alt="Imagen 2"></div>
+            
+        </div>
+        <!-- Flechas de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <div class="container">
+            <h2>Bienvenidos a nuestra Empresa</h2>
+            <p>Brindamos soluciones a medida para cada necesidad empresarial.</p>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros">
+        <div class="container">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos una empresa dedicada a ofrecer servicios de calidad en diversas áreas. Nuestro equipo está comprometido con la excelencia.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="servicio">
+                <h3>Consultoría Empresarial</h3>
+                <p>Brindamos asesoría estratégica para mejorar tu negocio.</p>
+            </div>
+            <div class="servicio">
+                <h3>Desarrollo de Software</h3>
+                <p>Soluciones a medida para optimizar los procesos de tu empresa.</p>
+            </div>
+            <div class="servicio">
+                <h3>Marketing Digital</h3>
+                <p>Estrategias para aumentar tu visibilidad en el mercado online.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xvgkbdvp" method="POST">
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Empresa de Servicios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- 🔥 Ahora el JavaScript está correctamente vinculado -->
+    <script src="tex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
